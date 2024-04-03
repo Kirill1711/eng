@@ -1,0 +1,63 @@
+html {
+    scroll-behavior: auto;
+}
+body {
+    overflow-x: hidden;
+}
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/*Блок ads*/
+.ads {
+    background-image: url('../pictures/ads/ads_picter.jpg');
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+}
+.ads p {
+    color: #fff;
+    font-size: 32px;
+    padding-top: 1em;
+    width: 300px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 992px;
+    }
+    .ads p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 768px;
+    }
+    .ads p {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 320px;
+    }
+    .ads {
+        height: 400px;
+    }
+    .ads p {
+        font-size: 18px;
+        float: right;
+        width: 200px;
+    }
+}
