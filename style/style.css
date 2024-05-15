@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
 }
 body {
     overflow-x: hidden;
@@ -10,6 +10,17 @@ body {
     margin: auto;
     font-family: "Open Sans", sans-serif;
 }
+.to_up {
+    position: sticky;
+    top: 80%;
+}
+.button_up {
+    width: 80px;
+    height: 76px;
+    float: right;
+    cursor: pointer;
+}
+
 
 
 /*Блок ads*/
@@ -19,6 +30,7 @@ body {
     height: 700px;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 .ads h1 {
     color: #fff;
@@ -27,6 +39,51 @@ body {
     width: 300px;
     font-weight: 400;
     font-style: italic;
+}
+
+.ads div div {
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.ads div div img {
+    width: 100px;
+    height: 78px;
+    animation: move 2.5s ease infinite;
+}
+.ads div div a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.ads div div a:hover {
+    color: #ff3333;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0);
+    }
+    30% {
+        transform: translate(50px, 0);
+    }
+    60% {
+        transform: translate(0);
+    }
+    90% {
+        transform: translate(-50px, 0);
+    }
+    100% {
+        transform: translate(0);
+    }
 }
 
 

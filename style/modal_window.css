@@ -32,23 +32,26 @@
     text-align: center;
     padding-top: 2em;
 }
-.modal__Window  ul {
-    margin: 2em;
-}
-.modal__Window  ul li {
-    font-size: 24px;
-    font-weight: 500;
+.modal__Window h3 {
     color: #000000;
-    text-align: justify;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.5em 0 1.5em 0;
 }
-
-.modal__Window p {
+.modal__Window p{
     text-align: left;
     margin: 1em;
     color: #000000;
     font-size: 24px;
     font-weight: 500;
 }
+.modal__Window a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
 
 
 @media screen and (max-width:1200px) {
@@ -62,13 +65,10 @@
     .modal__Window {
         width: 760px;
     }
-    .modal__Window h2 {
+    .modal__Window h2.h3 {
         font-size: 22px;
     }
-    .modal__Window  ul li {
-        font-size: 18px;
-    }
-    .modal__Window p {
+    .modal__Window p,span {
         font-size: 18px;
     }
 }
@@ -77,10 +77,7 @@
     .modal__Window {
         width: 300px;
     }
-    .modal__Window  ul li {
-        font-size: 16px;
-    }
-    .modal__Window p {
+    .modal__Window p,span {
         font-size: 16px;
     }
     .modal__Window img {

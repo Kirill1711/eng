@@ -1,0 +1,100 @@
+.special {
+    width: 100%;
+    height: 100%;
+    background-image: url('../pictures/special/pexels-pixabay-256417.jpg');
+    background-position: cover;
+}
+
+.special h2 {
+    color: #000000;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    padding: 1.5em;
+    text-decoration: underline;
+}
+.special__container div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.special__container div img {
+    width: 400px;
+    height: 400px;
+    box-shadow: 5px 5px 5px #000000;
+}
+.special__container div span img {
+    width: 70px;
+    height: 70px;
+    box-shadow: none;
+}
+
+.special__container div div {
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.special__container div div p,span {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+}
+.special__container div div img {
+    width: 30px;
+    height: 30px;
+    box-shadow: none;
+}
+.special__container div div p span {
+    text-decoration: line-through;
+}
+
+.special__container div button {
+    margin-top: 1em;
+    cursor: pointer;
+    background-color: #ff3333;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    border: 1px solid #ff3333;
+    width: 300px;
+    height: 70px;
+    border-radius: 30px;
+}
+.special__container div button:hover {
+    background-color: rgb(63, 63, 233);
+    border: 1px solid rgb(63, 63, 233);
+}
+
+
+@media screen and (max-width:1200px) {
+    .special__container div img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .special__container div img {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .special h2 {
+        font-size: 30px;
+        padding: 0.5em;
+    }
+    .special__container div {
+        gap: 10px;
+        flex-direction: column;
+        padding: 0.5em 0;
+    } 
+    .special__container div button {
+        width: 280px;
+    }
+}
